@@ -1,11 +1,18 @@
+import Banner from "../../components/Banner";
 import Header from "../../components/Header";
 import Menu from "../../components/Menu";
+import styles from "./Homepage.module.scss";
 
 export default function Homepage(){
   return (
     <>
       <Header />
-      <Menu />
+      <main>
+        <section className={styles.main}>
+          <Menu />
+          <Banner />
+        </section>
+      </main> 
     </>
   );
 }
